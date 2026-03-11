@@ -19,17 +19,18 @@ JRE - Java APIS + JVM(Executor Service) -> Allocate memory for objects is done b
 // By default your custom class is a child class of java.lang.Object
 package org.example.objects;
 
-class Customer extends Object{
+public class Customer extends Object{
   // define the attributes or class-level variables
-  long customerId;
-  String customerName;
-  int age;
-  boolean status;
+  public long customerId;
+  public String customerName;
+  public int age;
+  public boolean status;
 
   // Default constructor method are added by compiler when developer does not provides it
 
   // constructor method - no parameter constructor
   public Customer(){
+    System.out.println("No parameter constructor called for Customer");
     customerId = 0;
     customerName = null;
     age = 0;
